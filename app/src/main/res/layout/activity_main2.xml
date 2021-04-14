@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity2">
+
+<EditText
+    android:id="@+id/text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:autofillHints="false"
+    android:gravity="end"
+    android:inputType="none"
+    android:text="@string/display"
+    android:textAlignment="textEnd"
+    android:textColor="#0B0A0A"
+
+    android:textColorHint="@color/black"
+    android:textSize="36sp"
+
+    tools:ignore="LabelFor" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_below="@id/text">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/backs"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/circle"
+           android:onClick="BackspaceC"
+            android:text=""
+            app:srcCompat="@drawable/backspa" />
+
+
+        <Button
+            android:id="@+id/MR"
+            style="@style/calc_button"
+            android:layout_margin="3dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/circle"
+            android:onClick="MemoryReadC"
+            android:text="MR"
+            android:textColor="#112CC1"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/MC"
+            style="@style/calc_button"
+            android:layout_margin="3dp"
+            android:textColor="#112CC1"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/circle"
+            android:textSize="18sp"
+            android:onClick="MemoryClearC"
+            android:text="MC" />
+
+        <Button
+            android:id="@+id/MPlus"
+            style="@style/calc_button"
+            android:layout_margin="3dp"
+            android:layout_marginTop="2dp"
+            android:textColor="#112CC1"
+            android:background="@drawable/circle"
+            android:textSize="18sp"
+            android:onClick="MemoryPlusC"
+            android:text="M+" />
+        <Button
+            android:id="@+id/sin"
+            style="@style/calc_button"
+            android:layout_margin="3dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/circle"
+            android:onClick="SinC"
+            android:text="sin"
+            android:textSize="18sp"
+            android:textColor="#112CC1" />
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/reset"
+            style="@style/calc_button"
+            android:layout_margin="3dp"
+            android:background="@drawable/circle"
+            android:layout_marginTop="2dp"
+            android:textColor="#112CC1"
+            android:onClick="ClearC"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/exp"
+            style="@style/calc_button"
+            android:layout_margin="3dp"
+            android:textColor="#112CC1"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/circle"
+            android:onClick="ExpC"
+            android:text="^" />
+
+        <Button
+            android:id="@+id/division"
+            style="@style/calc_button"
+            android:layout_margin="3dp"
+            android:layout_marginTop="2dp"
+            android:textColor="#112CC1"
+            android:background="@drawable/circle"
+            android:onClick="DivideC"
+            android:text="/" />
+        <Button
+            android:id="@+id/MMinus"
+            style="@style/calc_button"
+            android:layout_margin="3dp"
+            android:layout_marginTop="2dp"
+            android:textColor="#112CC1"
+            android:background="@drawable/circle"
+            android:textSize="18sp"
+            android:onClick="MemoryMinusC"
+            android:text="M-" />
+
+        <Button
+            android:id="@+id/cos"
+            style="@style/calc_button"
+            android:layout_margin="3dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/circle"
+            android:onClick="CosC"
+            android:text="cos"
+            android:textSize="18sp"
+            android:textColor="#112CC1" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/seven"
+            style="@style/calc_button"
+            android:layout_margin="3dp"
+            android:layout_marginTop="2dp"
+            android:textColor="#050505"
+            android:backgroundTint="#DFDEDE"
+            android:background="@drawable/circle"
+            android:onClick="SevenC"
+            android:text="7" />
+
+
+        <Button
+            android:id="@+id/eight"
+            style="@style/calc_button"
+            android:textColor="#050505"
+            android:backgroundTint="#DFDEDE"
+            android:layout_marginTop="2dp"
+            android:layout_margin="3dp"
+            android:onClick="EightC"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/nine"
+            style="@style/calc_button"
+            android:textColor="#050505"
+            android:backgroundTint="#DFDEDE"
+            android:layout_marginTop="2dp"
+            android:layout_margin="3dp"
+            android:onClick="NineC"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/multiply"
+            style="@style/calc_button"
+            android:layout_margin="3dp"
+            android:textColor="#112CC1"
+            android:background="@drawable/circle"
+            android:onClick="MultiplyC"
+            android:text="*" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/four"
+            style="@style/calc_button"
+            android:textColor="#050505"
+            android:backgroundTint="#DFDEDE"
+            android:layout_margin="3dp"
+            android:onClick="FourC"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/five"
+            style="@style/calc_button"
+            android:textColor="#050505"
+            android:backgroundTint="#DFDEDE"
+            android:layout_margin="3dp"
+            android:onClick="FiveC"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/six"
+            style="@style/calc_button"
+            android:textColor="#050505"
+            android:backgroundTint="#DFDEDE"
+            android:layout_margin="3dp"
+            android:onClick="SixC"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/minus"
+            style="@style/calc_button"
+
+            android:textColor="#112CC1"
+            android:onClick="SubstractC"
+            android:text="-"
+            android:layout_margin="3dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/one"
+            style="@style/calc_button"
+            android:textColor="#050505"
+            android:backgroundTint="#DFDEDE"
+            android:layout_margin="3dp"
+            android:onClick="OneC"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/two"
+            style="@style/calc_button"
+            android:textColor="#050505"
+            android:backgroundTint="#DFDEDE"
+            android:layout_margin="3dp"
+            android:onClick="TwoC"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/three"
+            style="@style/calc_button"
+            android:textColor="#050505"
+            android:backgroundTint="#DFDEDE"
+            android:layout_margin="3dp"
+            android:onClick="ThreeC"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/plus"
+            style="@style/calc_button"
+            android:layout_margin="3dp"
+            android:textColor="#112CC1"
+            android:onClick="AddC"
+            android:text="+" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/par"
+            style="@style/calc_button"
+            android:textColor="#050505"
+            android:backgroundTint="#DFDEDE"
+            android:layout_margin="3dp"
+
+            android:onClick="ParC"
+            android:text="( )" />
+
+        <Button
+            android:id="@+id/zero"
+            style="@style/calc_button"
+
+            android:textColor="#050505"
+            android:backgroundTint="#DFDEDE"
+            android:onClick="ZeroC"
+            android:text="0"
+            android:layout_margin="3dp"/>
+
+        <Button
+            android:id="@+id/crop"
+            style="@style/calc_button"
+
+            android:backgroundTint="#DFDEDE"
+            android:onClick="DoteC"
+            android:text="."
+            android:textColor="#050505"
+            android:layout_margin="3dp"/>
+
+
+
+        <Button
+            android:id="@+id/equals"
+            style="@style/calc_button"
+
+            android:backgroundTint="#112CC1"
+            android:onClick="EqualC"
+            android:text="="
+            android:textSize="44sp"
+            android:layout_margin="3dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>
